@@ -1,0 +1,69 @@
+{
+  "kind": "collectionType",
+  "collectionName": "fakes",
+  "info": {
+    "singularName": "fake",
+    "pluralName": "fakes",
+    "displayName": "Fake",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "description": {
+      "type": "text"
+    },
+    "tags": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::tag.tag",
+      "mappedBy": "fakes"
+    },
+    "theme": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::theme.theme"
+    },
+    "verdict": {
+      "type": "enumeration",
+      "enum": [
+        "Правда",
+        "Неправда",
+        "Дезінформація",
+        "Маніпуляція "
+      ]
+    },
+    "source": {
+      "type": "string"
+    },
+    "date": {
+      "type": "date"
+    },
+    "link": {
+      "type": "string"
+    },
+    "archive_link": {
+      "type": "string"
+    },
+    "country": {
+      "type": "string"
+    },
+    "disproof": {
+      "type": "text"
+    },
+    "vox_article": {
+      "type": "string"
+    },
+    "youtube_video": {
+      "type": "string"
+    },
+    "infographic": {
+      "type": "string"
+    },
+    "fake_title": {
+      "type": "text"
+    }
+  }
+}
