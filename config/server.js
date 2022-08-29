@@ -4,4 +4,5 @@ module.exports = ({ env }) => ({
   app: {
     keys: env.array('APP_KEYS'),
   },
+  url: env('https://medfakes-cms.herokuapp.com/'),
 });
