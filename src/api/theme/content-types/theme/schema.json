@@ -13,19 +13,8 @@
   "pluginOptions": {},
   "attributes": {
     "Theme": {
-      "type": "text"
-    },
-    "themes": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::theme.theme",
-      "mappedBy": "theme"
-    },
-    "theme": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::theme.theme",
-      "inversedBy": "themes"
+      "type": "text",
+      "required": true
     }
   }
 }
